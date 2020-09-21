@@ -9,7 +9,6 @@ class StudentForm extends React.Component {
     e.preventDefault();
 
     this.props.addStudent(this.state);
-    this.state.name = '';
   };
   render() {
     return (
