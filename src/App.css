@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+.student-list {
+  background-color: #f9f9;
+  padding: 10px;
+}
+
+.student-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.student-list li {
+  margin: 10px;
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgb(75, 72, 72);
+}
+
+.teacher-list {
+  background-color: aquamarine;
+  padding: 10px;
+}
+
+.teacher-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.teacher-list li {
+  margin: 10px;
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 20px rgb(75, 72, 72);
+}
+
+.student-form {
+  margin: 40px;
+  text-align: center;
+}
+
+.student-form input {
+  padding: 10px;
+  border-radius: 5px;
+
+  border: 2px solid #777777;
+}
+.student-form input:focus {
+  outline: none;
+  padding: 10px;
+  border: 2px solid #777777;
+}
+.student-form button {
+  outline: none;
+  margin-left: 10px;
+  border-radius: 2px;
+  border: 0;
+  background-color: rgb(25, 111, 151);
+  color: white;
+  padding: 10px;
+}
