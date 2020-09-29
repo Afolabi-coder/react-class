@@ -7,24 +7,13 @@ import NavBar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import './app.css';
+
 import SinglePost from './components/SinglePost';
 
 class App extends React.Component {
   state = {
     posts: [],
   };
-
-  componentDidMount() {
-    axios
-      .get('https://jsonplaceholder.typicode.com/posts')
-      .then((response) =>
-        this.setState({
-          posts: response.data,
-        })
-      )
-      .catch((err) => console.log(err));
-  }
 
   render() {
     return (
@@ -34,9 +23,7 @@ class App extends React.Component {
           <Route
             exact
             path="/"
-            render={(routerProps) => (
-              <Home {...routerProps} posts={this.state.posts} />
-            )}
+            render={(routerProps) => <Home {...routerProps} />}
           />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
